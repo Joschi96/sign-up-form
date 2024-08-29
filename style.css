@@ -1,0 +1,82 @@
+/* Normalize and reset */
+@import "modern-normalize";
+
+:root{
+    line-height: 1.5;
+    --main-color: #081820;
+    --sec-color:#000818;
+    --green: #082820;
+    --light-green: #e8f4d0;
+    --text: #f8fce8;
+}
+html{
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+    margin: 0;
+}
+  
+ol[role="list"], ul[role="list"] {
+    list-style: none;
+    padding-inline: 0;
+}
+  
+h1, h2, h3, h4, h5 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+  
+img {
+    display: block;
+    max-inline-size: 100%;
+}
+/* END Normalize and reset */
+
+body{
+    margin: 0 ;
+    padding: 0 ;
+    background-image: url(images/forest.png);
+    background-repeat: no-repeat;
+    background-size: auto 100vh;
+    height: 100%;
+}
+
+.right{
+    padding: 0;
+    margin: 0 0 0 35%;
+    height: 100%;
+    background: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: var(--text);
+}
+.flex{
+    padding: 0 0 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.text,.lower{
+    flex-grow: 1;
+} 
+
+.form-container{
+    background: var(--sec-color);
+    height: 200px;
+    flex-grow: 0;
+}
+
+.text{
+    justify-content: flex-end;
+    padding: 0 20rem 2.5rem 2.5rem;
+    font-size: 24px;
+}
+.lower{
+    align-items: baseline;
+    padding: 2.5rem 0 0 2.5rem
+}
+#first{
+    padding-bottom: 1rem;
+}
+
