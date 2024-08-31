@@ -1,6 +1,12 @@
 /* Normalize and reset */
 @import "../../node_modules/modern-normalize/modern-normalize.css";
 
+@font-face {
+    font-family: "pixel";
+    src:    url(/fonts/Minecraft.woff2) format("woff"),
+            url(/fonts/Minecraft.woff) format("woff"),
+            url(fonts/Minecraft.ttf) format("truetype");
+}
 :root{
     line-height: 1.5;
     --main-color: #081820;
@@ -8,6 +14,7 @@
     --green: #082820;
     --light-green: #e8f4d0;
     --text: #f8fce8;
+    font-family: "pixel";
 }
 html{
     height: 100%;
@@ -45,8 +52,10 @@ body{
 h1{
     font-size: 32px;
     margin-bottom: 15px;
+    margin-top: 1rem;
     color: white;
     font-weight: bold;
+    letter-spacing: 3px;
 }
 ul{
     list-style-type: none;
@@ -54,7 +63,7 @@ ul{
     padding: 0;
 }
 li{
-    padding-bottom: 0.5rem;
+    padding-bottom: 1.5rem;
 }
 .highlight{
     font-style: italic;
@@ -83,6 +92,7 @@ li{
     text-align: center;
     font-size: 32px;
     box-shadow: 0 5px 10px -5px #000000 ;
+    letter-spacing: 3px;
 
 }
 .flex{
@@ -94,12 +104,14 @@ li{
 .lower{
     flex-grow: 1;
     box-shadow: 0 0 10px #000000;
+    font-family: sans-serif;
 } 
 
 .form-container{
     background: var(--sec-color);
-    height: 250px;
+    height: 300px;
     flex-grow: 0;
+    color: white;
     box-shadow: 0 3px 20px #000000;
 }
 
@@ -120,6 +132,7 @@ li{
 .forms-lists{
     display: flex;
     column-gap: 4rem;
+    font-family: sans-serif;
 }
 
 label, input{
@@ -130,7 +143,7 @@ input[type=submit]{
     background-color: var(--text);
     border: none;
     box-shadow: 10px  #000000;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     color: #000818;
     border-radius: 0.5rem;
@@ -143,3 +156,26 @@ input[type=submit]:hover{
     color: var(--text);
 }
 
+input[type=text],input[type=password],input[type=email],input[type=tel]{
+    background-color: var(--sec-color);
+    width: 275px;
+    border: 0px solid;
+    border-bottom: 2px solid var(--text);
+    color: var(--text);
+}
+
+
+input:focus:valid{
+    border-bottom: 2px #46684f solid;
+    outline: none;
+}
+
+input:focus:invalid{
+    border-bottom: 2px #850000 solid;
+    outline:none;
+}
+a{
+    color: #970083;
+    text-decoration: none;
+    font-weight: bold;
+}

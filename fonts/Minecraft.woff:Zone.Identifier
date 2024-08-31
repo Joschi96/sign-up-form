@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://eu-central.storage.cloudconvert.com/tasks/a42aa014-9fa0-456a-8f4f-4676f4a6788e/Minecraft.woff?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20240831%2Ffra%2Fs3%2Faws4_request&X-Amz-Date=20240831T133528Z&X-Amz-Expires=86400&X-Amz-Signature=c07391cda72b1d2e29622e6b7d4d0d125c7165cf5a285a1a1041fff4886c6284&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22Minecraft.woff%22&response-content-type=font%2Fwoff&x-id=GetObject
