@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="left">
+        Come join the community!
+    </div>
     <!--https://www.reddit.com/r/wallpapers/comments/5jf8xa/pixel_art_wallpaper_gallery/-->
     <div class="right">
         <div class="flex text">
@@ -22,12 +24,43 @@
         </div>
 
         <div class="flex form-container">
-            <form action="" method="post">
-                <h1>Come join us!</h1>
+            <form action="" method="post" id="myform">
+            <h1>Come join us!</h1>
+            <div class="forms-lists">
+                <ul class="form-left">
+                    <li>
+                        <label for="fname">First name</label>
+                        <input type="text" name="fname" id="fname" required>
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </li>
+                    <li>
+                        <label for="pw">Password</label>
+                        <input type="password" name="pw" id="pw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            required title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                    </li>
+                </ul>
+                <ul class="form-right">
+                    <li>
+                        <label for="lname">Last name</label>
+                        <input type="text" name="lname" id="lname" required>
+                    </li>
+                    <li>
+                        <label for="pnr">Phonenumber</label>
+                        <input type="tel" name="pnr" id="pnr">
+                    </li>
+                    <li>
+                        <label for="pw_confirm">Confirm password</label>
+                        <input type="password" name="pw_confirm" id="pw_confirm" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                    </li>
+                </ul>
+            </div>
             </form>
         </div>
         <div class="flex lower">
-            <button type="submit">Create Account</button>
+            <input type="submit" form="myform" value="Create Account">
             <p>Already have an account? Log in</p>
         </div>
     </div>
